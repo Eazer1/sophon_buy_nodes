@@ -111,7 +111,7 @@ def mint_node(prkey, tier, amount):
                 'from': main_acc.address,
                 'value': 0,
                 'chainId': web3.eth.chain_id,
-                'gasPrice': int(web3.eth.gas_price*1.11),
+                'gasPrice': int(web3.eth.gas_price*2.11),
                 'nonce': web3.eth.get_transaction_count(main_acc.address),
             })
             signed_tx = web3.eth.account.sign_transaction(transaction, main_acc._private_key)
